@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cryptofunding</title>
+</head>
+
+<body>
+    <header>
+        <a class="logoLink" href="index.html">
+            <img class="logo" src="img/logo.png">
+        </a>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Latest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="favorites.html">Favorites</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="supported.html">Supported</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myprojects.html">My projects</a>
+                </li>
+            </ul>
+        </div>
+        <a class="create-project bulb" data-toggle="tooltip" data-placement="left" title="Create a project" href="create.html">
+            <i class="far fa-lightbulb"></i>
+        </a>
+    </nav>
+    <div class="container page-body pt-4">
+        <div class="chapter">
+            <div class="delimiter"></div>
+            <h1 class="chapter-title">You supported</h1>
+        </div>
+        <div class="no-projects hide">No projects</div>
+        <div class="cssload-container">
+            <div class="cssload-zenith"></div>
+        </div>
+        <div class="card-deck d-flex justify-content-center flex-wrap project-deck">
+            <div class="card project-card">
+                <img class="card-img-top project-logo" src="img/no-image.png" alt="Card image cap">
+                <div class="card-body d-flex justify-content-between flex-column">
+                    <div>
+                        <h5 class="card-title">Super project</h5>
+                        <div class="card-text project-description">
+                            <div>Short description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, earum.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text d-flex justify-content-between mt-2">
+                            <small class="text-success">225 NAS collected</small>
+                            <small class="text-muted">Goal: 1050 NAS</small>
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">Goes 45 days</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-info" hidden>
+                    <div class="images">
+                        <img src="https://cdn.pixabay.com/photo/2016/02/22/10/20/human-1215160_960_720.jpg">
+                        <img src="https://cdn.pixabay.com/photo/2016/10/29/09/38/abstract-1780212_960_720.png">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg">
+                    </div>
+                    <div class="full-description">This is a full description of project</div>
+                    <div class="additional">My contacts: fb.com/id1</div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                    <div class="card-controls">
+                        <button class="btn border rounded card-control" data-toggle="tooltip" data-placement="bottom" title="Add to favorites">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn border rounded card-control" data-toggle="tooltip" data-placement="bottom" title="Support the project">
+                            <i class="fas fa-dollar-sign"></i>
+                        </button>
+                    </div>
+                    <button class="btn btn-light text-secondary" data-toggle="modal" data-target=".read-more-modal">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Read more-->
+    <div class="modal read-more-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Super Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="description mt-3">
+                        <h4>Description</h4>
+                        <div>Bla-bla-bla-bla</div>
+                    </div>
+                    <div class="additional mt-3">
+                        <h4>Additional information</h4>
+                        <div>Bla-bla-bla-bla</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">cryptofunding © 2018 </span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/7.0.1/bignumber.min.js"></script>
+    <script src="js/nebPay.js"></script>
+    <script src="js/contractApi.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        'use strict';
+        window.addEventListener("load", function () {
+            let isExtensionExist = typeof (webExtensionWallet) !== "undefined";
+            if (!isExtensionExist) {
+                clearLoadingAnimation();
+                addNoExtensionAlert();
+            }
+            else {
+                $('[data-toggle="tooltip"]').tooltip();
+                $('.read-more-modal').on('show.bs.modal', function (event) {
+                    let modalInfo = $(event.relatedTarget.closest(".project-card").querySelector(".modal-info"));
+                    let fullDescription = modalInfo.find(".full-description").text();
+                    let additional = modalInfo.find(".additional").text();
+                    let images = modalInfo.find(".images img");
+                    let modal = $(this);
+                    if (fullDescription) {
+                        modal.find('.description div').text(fullDescription);
+                    }
+                    else {
+                        modal.find('.description').hide();
+                    }
+
+                    if (additional) {
+                        modal.find('.additional div').text(additional);
+                    }
+                    else {
+                        modal.find('.additional').hide();
+                    }
+
+                    let carousel = modal.find('.carousel-inner');
+                    carousel.empty();
+                    if (images.length > 0) {
+                        let hasActiveItem = false;
+                        for (const img of images) {
+                            carousel.append(`<div class="carousel-item ${(hasActiveItem ? "" : "active")}">
+                                            <img class="d-block w-100" src="${$(img).attr('src')}">
+                                        </div>`);
+                            hasActiveItem = true;
+                        }
+                    }
+                    else {
+                        modal.find('#carousel').hide();
+                    }
+                });
+
+                window.api = new ProjectContractApi();
+                $('.project-deck').empty();
+                api.getSupported((resp) => {
+                    clearLoadingAnimation();
+                    if (resp.result) {
+                        let projects = JSON.parse(resp.result);
+                        projects.sort((p1, p2) => p1.added >= p2.added ? -1 : 1);
+                        for (const project of projects) {
+                            addProjectCard(project);
+                        }
+
+                        if(projects.length == 0) {
+                           $(".no-projects").removeClass("hide");
+                        }
+                        else {
+                            $(".project-deck").removeClass("hide");
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
